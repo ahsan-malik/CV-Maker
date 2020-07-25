@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/infoBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="some"
+            android:textSize="24sp"
+            android:layout_marginTop="35dp"/>
+
+        <EditText
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Title"
+            android:paddingLeft="15dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/institute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="School/Institute"
+            android:paddingLeft="15dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CGPA/Percentage"
+            android:paddingLeft="15dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Passing Year"
+            android:paddingLeft="15dp"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+

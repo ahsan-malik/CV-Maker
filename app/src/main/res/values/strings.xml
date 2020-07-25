@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Online CV Maker</string>
+    <string name="new_cv">Create New CV</string>
+    <string name="edit_cv">Edit Existing</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="facebook_app_id">2438115226477799</string>
+</resources>

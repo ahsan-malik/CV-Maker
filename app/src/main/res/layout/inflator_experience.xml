@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/org"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Orgnization"
+        android:paddingLeft="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/designation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Designation"
+        android:paddingLeft="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/dateFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date From(year)"
+        android:paddingLeft="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/dateTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date To(year)"
+        android:paddingLeft="15dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Role"
+        android:paddingLeft="15dp"
+        android:textSize="22sp" />
+
+</LinearLayout>

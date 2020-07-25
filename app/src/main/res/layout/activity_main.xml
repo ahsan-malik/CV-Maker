@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ocm_logo"
+        android:layout_marginTop="160dp"/>
+
+    <Button
+        android:id="@+id/newCVbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:padding="10dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_below="@id/mainLogo"
+        android:layout_marginTop="100dp"
+        android:layout_centerInParent="true"
+        android:text="@string/new_cv"
+        android:onClick="createNewOne"/>
+
+    <Button
+        android:id="@+id/editCVbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignLeft="@+id/newCVbtn"
+        android:layout_alignRight="@id/newCVbtn"
+        android:layout_below="@id/newCVbtn"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="@string/edit_cv"
+        android:onClick="editExistingCV"/>
+
+        <Button
+            android:id="@+id/resumeCurrentBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignLeft="@+id/newCVbtn"
+            android:layout_alignRight="@id/newCVbtn"
+            android:layout_below="@id/editCVbtn"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:text="Resume"
+            android:visibility="invisible"
+            android:onClick="resumeCurrentCV"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CVCreatingActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:paddingHorizontal="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/personalInfoBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/person_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Personal Info"
+                    android:paddingTop="20dp"/>
+                <Button
+                    android:id="@+id/objectiveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/objective_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Objective"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/qualificationBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/qualification_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Qualification"
+                    android:paddingTop="20dp"/>
+                <Button
+                    android:id="@+id/workBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/work_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Experience"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/contactBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/contact_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Contact"
+                    android:paddingTop="20dp"/>
+                <Button
+                    android:id="@+id/projectBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/project_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Projects"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/referenceBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/reference"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Reference"
+                    android:paddingTop="20dp"/>
+
+                <Button
+                    android:id="@+id/otherBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="50pt"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="10dp"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/other_icon"
+                    android:onClick="btnClick"
+                    android:paddingHorizontal="30dp"
+                    android:text="Others"
+                    android:paddingTop="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/previewBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="preview"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_marginHorizontal="5dp"
+                    android:onClick="btnClick"/>
+                <Button
+                    android:id="@+id/saveCV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="save"
+                    android:onClick="btnClick"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/cardview_dark_background"/>
+                <Button
+                    android:id="@+id/exportBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="export"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/cardview_dark_background"
+                    android:layout_marginHorizontal="5dp"
+                    android:onClick="btnClick"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

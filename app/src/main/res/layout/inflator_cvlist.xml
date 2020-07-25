@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/cvNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="myCV.pdf"
+        android:textSize="24sp"/>
+    <ImageButton
+        android:id="@+id/deleteCVBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:onClick="deleteCVBtn"/>
+
+    <ImageButton
+        android:id="@+id/editCVBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@id/deleteCVBtn"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:onClick="editCV"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/cvNameText"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
