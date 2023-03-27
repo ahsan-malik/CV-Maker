@@ -31,7 +31,7 @@
 
         <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider2438115226477799"
+            android:authorities="com.facebook.app.FacebookContentProvider + facebook_app_id"
             android:exported="true" />
         <provider
             android:name="android.support.v4.content.FileProvider"
